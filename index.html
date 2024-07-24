@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="header">My to-do list</div>
+    <div class="to-do-container">
+        <div class="new-task">
+            <p>Add a new task</p>
+            <div class="new-task-data-container">
+                <form id="new-task-form">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" name="description" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="due-date">Due date:</label>
+                        <input type="date" id="due-date" name="due-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority:</label>
+                        <select name="priority" id="priority">
+                            <option value="low">Low</option>
+                            <option value="mid">Mid</option>
+                            <option value="high">High</option>
+                            <option value="ultra">Ultra</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Project:</label>
+                        <input type="text" id="project" name="project" required>
+                    </div>
+                    <button id="submit-new-task">Add Task</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="task-list-container">
+        <h2>Upcoming Tasks</h2>
+        <ul id="task-list"></ul>
+    </div>
+<script defer src="bundle.js"></script></body>
+</html>
